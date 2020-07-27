@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Recursive', sans-serif;
+}
+body{
+    background: url(images/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 0px 19px rgba(0, 0, 0, 1);;
+}
+html{
+    height: 100%;
+}
+.content{
+    padding-top: 40%;
+    color: white;
+    text-shadow: 1px 0px 19px rgba(0, 0, 0, 1);;
+}
+footer a, footer{
+    text-decoration: none;
+    color: white;
+}
