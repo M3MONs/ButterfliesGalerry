@@ -1,3 +1,14 @@
+<?php
+if(isset($_POST['submit'])){
+    $to      = 'mitlorgame@gmail.com';
+    $subject = 'Butterfly Image';
+    $message = $_POST['imagelink'];
+    $headers = 'From: ButterfliesGallery@gmail.com';
+    
+    mail($to, $subject, $message, $headers); 
+    header('Location: send.php');
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -37,19 +48,18 @@
           </li>
         </ul>
       </div>
-    </div>
   </nav>
   <div class="container text-center">
     <div class="content">
-    <main>
-      <h1>Send Butterfly Image</h1>
-      <form class="mt-4" action="sendForm.php" method="post">
-        <input type="url" name="imagelink" placeholder="Paste image link here">
-        <p><button type="submit" name="submit" class="btn btn-success mt-2">Send</button></p>
-      </form>
-</main>
+        <h1>Send Butterfly Image</h1>
+        <form class="mt-4" action="" method="post">
+          <input type="url" name="imagelink" placeholder="Paste image link here">
+          <p><button type="submit" name="submit" class="btn btn-success mt-2">Send</button></p>
+        </form>
     </div>
   </div>
+</div>
+</div>
 
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="d-none d-lg-inline fixed-bottom">
     <path fill="#273036" fill-opacity="1"
