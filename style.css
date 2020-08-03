@@ -6,6 +6,7 @@
     text-decoration: none;
     font-family: 'Recursive', sans-serif;
 }
+
 body{
     background: url(images/background-image.jpg);
     background-size: cover;
@@ -25,3 +26,10 @@ footer a, footer{
     color: white;
 }
 
+#g-bg{
+    background: black !important;
+}
+
+#gallery-nav{
+    background-color: black;
+}
